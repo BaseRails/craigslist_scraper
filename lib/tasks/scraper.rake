@@ -113,7 +113,7 @@ namespace :scraper do
   task discard_old_data: :environment do
     Post.all.each do |post|
       if post.created_at < 1.day.ago
-        post.destroy 
+        post.destroy
       end
     end
   end
