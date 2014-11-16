@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141116070050) do
+ActiveRecord::Schema.define(version: 20141116223140) do
 
   create_table "anchors", force: true do |t|
     t.string   "value"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20141116070050) do
   end
 
   create_table "images", force: true do |t|
-    t.string   "url"
+    t.text     "url"
     t.integer  "post_id"
     t.datetime "created_at"
     t.datetime "updated_at"
