@@ -19,15 +19,6 @@ ActiveRecord::Schema.define(version: 20141116070050) do
     t.datetime "updated_at"
   end
 
-  create_table "images", force: true do |t|
-    t.string   "url"
-    t.integer  "post_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "images", ["post_id"], name: "index_images_on_post_id"
-
   create_table "locations", force: true do |t|
     t.string   "code"
     t.string   "name"
